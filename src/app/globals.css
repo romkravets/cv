@@ -1,5 +1,32 @@
 @import "tailwindcss";
 
+:root {
+  --color-dark: #0d0d0d;
+  --color-contrast: #1f1f1f;
+  --color-accent: #00ffea;
+  --color-secondary: #ff3c68;
+  --color-heading: #ffffff;
+  --color-muted: #999999;
+}
+
+.shadow-neon {
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+
 html,
 body {
   height: 100%;
@@ -52,3 +79,89 @@ h1, h2, h3 {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.bg-sky {
+    background-image: url('/images/sky-bg.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.bg-sky-space {
+  background-size: cover;
+}
+
+.btn-up {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 8rem;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* html {
+            scroll-snap-type: y mandatory;
+        } */
+
+        .img-container {
+            scroll-snap-align: start;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .img-container > div {
+            width: 300px;
+            height: 400px;
+            margin: 20px;
+            background: #f5f5f5;
+            overflow: hidden;
+        }
+
+        .img-container img {
+            width: 300px;
+            height: 400px;
+        }
+
+        @media (max-width: 500px) {
+            .img-container > div {
+                width: 150px;
+                height: 200px;
+            }
+
+            .img-container img {
+                width: 150px;
+                height: 200px;
+            }
+        }
+
+        .img-container h2 {
+            color: #8df0cc;
+            margin: 0;
+            font-family: "Azeret Mono", monospace;
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: -3px;
+            line-height: 1.2;
+            position: absolute;
+            display: inline-block;
+            top: calc(50% - 25px);
+            left: calc(50% + 120px);
+        }
+
+        .progress {
+            position: fixed;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: #8df0cc;
+            bottom: 50px;
+            transform: scaleX(0);
+        }
