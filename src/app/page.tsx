@@ -5,142 +5,85 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <main className="bg-black text-white h-screen overflow-y-scroll flex flex-col-reverse snap-y snap-mandatory scroll-smooth">
-      <section
-        id="hero"
-        className="flex flex-col  min-h-screen h-screen  bg-white text-black items-center justify-center h-screen px-6 text-center relative"
+      <section className="bg-legend flex flex-col min-h-screen h-screen items-center justify-center h-screen px-6 text-center relative">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="max-w-2xl"
       >
-        <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-4 text-accent"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          Hallo
-        </motion.h1>
+        <h1 className="text-5xl md:text-6xl font-bold mb-4">
+          The Legend Begins
+        </h1>
+        <p className="text-xl">
+          Long ago, in a digital kingdom far beyond firewalls and code, lived a boy named Roman.
+          He wasn’t a wizard, yet he wielded a power that could shape worlds — the power of code.
+          They called him... <span className="font-semibold">The Front-end Alchemist</span>.
+        </p>
+      </motion.div>
+      {/* <img
+        src="/images/legend-earth.png"
+        alt="The Front-end Alchemist"
+        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 opacity-90 pointer-events-none"
+      /> */}
+    </section>
 
-        <motion.p
-          className="text-xl md:text-2xl max-w-xl"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 1 }}
-          viewport={{ once: true }}
-        >
-          Створюю красиві, швидкі та функціональні сайти.
-        </motion.p>
-
-        <motion.div
-          className="absolute bottom-10 animate-bounce"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-        >
-          {/* <ArrowDown className="w-8 h-8 text-white" /> */}
-        </motion.div>
-      </section>
-      <section
-        id="about"
-        className="flex flex-col min-h-screen h-screen items-center justify-center px-6 text-center relative"
+       <section className="bg-about bg-[#111] text-white flex flex-col min-h-screen h-screen items-center justify-center h-screen px-6 text-center relative">
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="max-w-3xl mx-auto"
       >
-        <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-4"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          viewport={{ once: true }} // анімація лише один раз
-        >
-          About
-        </motion.h1>
+        <h2 className="text-4xl font-bold mb-6">The Chosen One’s Path</h2>
+        <p className="text-lg">
+          Roman wasn't always a master.
+          His journey began with a humble laptop, where he battled for hours against the demons of HTML, CSS, and the dark shadows of Bootstrap.
+          But through perseverance and a love for beauty, speed, and logic — he cast his first spell: a website that breathed with life.
+        </p>
+      </motion.div>
+    </section>
 
-        <motion.p
-          className="text-xl md:text-2xl max-w-xl"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 1 }}
-          viewport={{ once: true }}
-        >
-          Створюю красиві, швидкі та функціональні сайти.
-        </motion.p>
-
-        <motion.div
-          className="absolute bottom-10 animate-bounce"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-        >
-          {/* <ArrowDown className="w-8 h-8 text-white" /> */}
-        </motion.div>
-      </section>
-      <section
-        id="projects"
-        className="flex flex-col min-h-screen h-screen bg-white text-black text-black items-center justify-center h-screen px-6 text-center relative"
+ <section className="bg-projects bg-[#141414] text-white flex flex-col min-h-screen h-screen items-center justify-center h-screen px-6 text-center relative">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="max-w-3xl mx-auto"
       >
-        <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-4"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          viewport={{ once: true }} // анімація лише один раз
-        >
-          Projects
-        </motion.h1>
+        <h2 className="text-4xl font-bold mb-6">Deeds and Legends</h2>
+        <p className="text-lg">
+          Roman glory was forged not by words, but through great quests — his <strong>projects</strong>.
+          One turned a dull map into a magical quest for children.
+          Another helped brave cyclists discover hidden paths.
+          Each project had a soul, each was born from code and heart alike.
+        </p>
+      </motion.div>
+    </section>
 
-        <motion.p
-          className="text-xl md:text-2xl max-w-xl"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 1 }}
-          viewport={{ once: true }}
-        >
-          Створюю красиві, швидкі та функціональні сайти.
-        </motion.p>
-
-        <motion.div
-          className="absolute bottom-10 animate-bounce"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-        >
-          {/* <ArrowDown className="w-8 h-8 text-white" /> */}
-        </motion.div>
-      </section>
-      {/* Hero Section */}
-      <section
-        id="contact"
-        className="flex flex-col min-h-screen h-screen  items-center justify-center h-screen px-6 text-center relative"
+<section className="bg-contacts flex flex-col min-h-screen h-screen items-center justify-center h-screen px-6 text-center relative">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="max-w-3xl mx-auto text-center"
       >
-        <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-4"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          viewport={{ once: true }} // анімація лише один раз
-        >
-          Contacts
-        </motion.h1>
+        <h2 className="text-4xl font-bold mb-6">The Fire Signal</h2>
+        <p className="text-lg">
+          Now, after countless adventures, Roman rests atop the pixelated mountain, awaiting his next call.
+          If you have a vision that needs a touch of frontend magic — <span className="italic">send a raven, light the flame</span>… and the Alchemist shall rise again.
+        </p>
+      </motion.div>
+    </section>
 
-        <motion.p
-          className="text-xl md:text-2xl max-w-xl"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 1 }}
-          viewport={{ once: true }}
-        >
-          Створюю красиві, швидкі та функціональні сайти.
-        </motion.p>
+    
 
-        <motion.div
-          className="absolute bottom-10 animate-bounce"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-        >
-          {/* <ArrowDown className="w-8 h-8 text-white" /> */}
-        </motion.div>
-      </section>
       <nav className="fixed bottom-0 left-0 right-0 bg-black text-white py-4 px-6 flex justify-around z-50 border-t border-white/10">
         <a href="#hero" className="hover:text-gray-400 transition">
-          Main
+          Home
         </a>
         <a href="#about" className="hover:text-gray-400 transition">
           About
@@ -149,7 +92,7 @@ export default function Home() {
           Projects
         </a>
         <a href="#contact" className="hover:text-gray-400 transition">
-          Contacts
+          Contact
         </a>
       </nav>
     </main>

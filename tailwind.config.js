@@ -15,6 +15,9 @@ module.exports = {
         heading: '#ffffff',      // white text
         muted: '#999999',        // muted gray text
       },
+       boxShadow: {
+    neon: "0 0 10px #00ffff, 0 0 20px #00ffff",
+  },
     },
   },
   plugins: [],

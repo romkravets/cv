@@ -17,3 +17,38 @@ h1, h2, h3 {
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: 0.02em;
 }
+
+.bg-legend {
+  background-image: url('/images/banner-legend.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-about {
+  background-image: url('/images/banner-about.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-skills {
+  background-image: url('/images/banner-skills.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-projects {
+    background-image: url('/images/banner-proj.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-contacts {
+    background-image: url('/images/banner-contacts.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
