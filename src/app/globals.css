@@ -22,6 +22,22 @@
   }
 }
 
+@keyframes float-rotate {
+  0% {
+    transform: translateY(0) rotate(var(--float-rotate));
+  }
+  50% {
+    transform: translateY(-10px) rotate(var(--float-rotate));
+  }
+  100% {
+    transform: translateY(0) rotate(var(--float-rotate));
+  }
+}
+
+.animate-float {
+  animation: float var(--float-duration) ease-in-out infinite;
+}
+
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
