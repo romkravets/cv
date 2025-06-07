@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { SliderProject } from "@/components/Slider";
 import Image from 'next/image';
+import Link from "next/link";
 
 const socialLinks = [
   {
@@ -56,7 +57,7 @@ export default function Home() {
     <main className="bg-black text-white h-screen overflow-y-scroll flex flex-col-reverse snap-y snap-mandatory scroll-smooth">
       <section
         id="legend"
-        className="relative bg-legend flex flex-col min-h-screen h-screen items-center justify-center px-6 text-center"
+        className="relative bg-legend flex flex-col min-h-[80vh] sm:min-h-screen h-screen items-center justify-center px-6 text-center"
       >
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -75,13 +76,11 @@ export default function Home() {
           </p>
         </motion.div>
         <div className="btn-up animate-float">Up Only</div>
-        <div>
-          <Image
-            className="absolute bottom-0 left-0"
+          <img
+            className="absolute bottom-0 left-0 w-[100%] h-[auto]"
             src="/images/star-sky.png"
-            alt="User" width={100} height={100} layout="responsive"
+            alt="User"
           />
-        </div>
         <div>
           <Image
             className="absolute bottom-0"
@@ -95,7 +94,7 @@ export default function Home() {
 
       <section
         id="about"
-        className="bg-sky bg-[#260047] min-h-[250vh] text-white flex flex-col items-center justify-center text-center relative"
+        className="bg-sky bg-[#260047] min-h-[150vh] md:min-h-[250vh] text-white flex flex-col items-center justify-center text-center relative"
       >
         <SliderProject/>
         <Image
@@ -103,7 +102,7 @@ export default function Home() {
           alt=""
           width={100}
           height={100}
-          className="absolute bottom-[-80px] right-0 animate-float rotate-210"
+          className="absolute bottom-[-80px] right-0 animate-float rotate-210 img-rock"
           style={
             {
               "--float-rotate": "0deg",
@@ -116,7 +115,7 @@ export default function Home() {
           alt=""
           width={100}
           height={100}
-          className="absolute bottom-[-80px] right-[250px] animate-float rotate-45"
+          className="absolute bottom-[-80px] right-[250px] animate-float rotate-45 img-rock"
           style={
             {
               "--float-rotate": "0deg",
@@ -129,7 +128,7 @@ export default function Home() {
           alt=""
           width={210}
           height={210}
-          className="absolute bottom-[-50px] right-[100px] animate-float rotate-90"
+          className="absolute bottom-[-50px] right-[100px] animate-float rotate-90 img-rock"
           style={
             {
               "--float-rotate": "0deg",
@@ -142,7 +141,7 @@ export default function Home() {
           alt="Bera Moon"
           width={200}
           height={200}
-          className="absolute bottom-[-80px] left-0 animate-float rotate-210"
+          className="absolute bottom-[-80px] left-0 animate-float rotate-210 img-rock"
           style={
             {
               "--float-rotate": "0deg",
@@ -155,7 +154,7 @@ export default function Home() {
           alt=""
           width={250}
           height={250}
-          className="absolute left-[25%] bottom-[-80px] animate-float"
+          className="absolute left-[25%] bottom-[-80px] animate-float img-rock"
           style={
             {
               "--float-rotate": "0deg",
@@ -168,7 +167,7 @@ export default function Home() {
           height={200}
           src="/images/icon/ast-1.webp"
           alt=""
-          className="absolute left-[50%] bottom-[-50px] animate-float"
+          className="absolute left-[50%] bottom-[-50px] animate-float img-rock"
           style={
             {
               "--float-rotate": "135deg",
@@ -197,15 +196,14 @@ export default function Home() {
 
       <section
         id="contact"
-        className="bg-contacts bg-[#141414] text-white flex flex-col min-h-screen h-screen items-center justify-center px-6 text-center relative"
-      >
-        
+  className="bg-contacts bg-[#141414] text-white flex flex-col min-h-[30vh] md:min-h-[40vh] items-center justify-center px-6 text-center relative"      
+  >
         <Image
           height={200}
           width={200}
           src="/images/icon/ast-1.webp"
           alt=""
-          className="absolute left-[-50px] bottom-[-100px] animate-float rotate-90"
+          className="absolute left-[-50px] bottom-[-100px] animate-float rotate-90 img-rock"
           style={
             {
               "--float-rotate": "135deg",
@@ -218,7 +216,7 @@ export default function Home() {
           height={200}
           src="/images/icon/ast-3.webp"
           alt=""
-          className="absolute left-[100px] bottom-[-100px] animate-float rotate-45"
+          className="absolute left-[100px] bottom-[-100px] animate-float rotate-45 img-rock"
           style={
             {
               "--float-rotate": "135deg",
@@ -231,7 +229,7 @@ export default function Home() {
           alt=""
           width={250}
           height={250}
-          className="absolute left-[30%] bottom-[-150px] animate-float rotate-210"
+          className="absolute left-[30%] bottom-[-150px] animate-float rotate-210 img-rock"
           style={
             {
               "--float-rotate": "0deg",
@@ -244,7 +242,7 @@ export default function Home() {
           height={200}
           src="/images/icon/ast-2.webp"
           alt="Bera Moon"
-          className="absolute left-[50%] bottom-[-70px] animate-float"
+          className="absolute left-[50%] bottom-[-70px] animate-float img-rock"
           style={
             {
               "--float-rotate": "135deg",
@@ -257,7 +255,7 @@ export default function Home() {
           alt=""
           width={250}
           height={250}
-          className="absolute right-[-50px] bottom-[-150px] animate-float rotate-180"
+          className="absolute right-[-50px] bottom-[-150px] animate-float rotate-180 img-rock"
           style={
             {
               "--float-rotate": "0deg",
@@ -270,7 +268,7 @@ export default function Home() {
           alt=""
           width={100}
           height={100}
-          className="absolute bottom-[-80px] right-[250px] animate-float rotate-45"
+          className="absolute bottom-[-80px] right-[250px] animate-float rotate-45 img-rock"
           style={
             {
               "--float-rotate": "0deg",
@@ -283,7 +281,7 @@ export default function Home() {
           alt=""
           width={210}
           height={210}
-          className="absolute bottom-[-50px] right-[100px] animate-float rotate-90"
+          className="absolute bottom-[-50px] right-[100px] animate-float rotate-90 img-rock"
           style={
             {
               "--float-rotate": "0deg",
@@ -296,7 +294,7 @@ export default function Home() {
           alt="Bera Moon"
           width={200}
           height={200}
-          className="absolute bottom-[-80px] left-0 animate-float rotate-210"
+          className="absolute bottom-[-80px] left-0 animate-float rotate-210 img-rock"
           style={
             {
               "--float-rotate": "0deg",
@@ -338,11 +336,17 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <div className="fixed left-0 top-1/2 -translate-y-1/2 text-white py-4 px-3 flex flex-col gap-4 z-50 border-r border-white/10">
+      <div className="fixed left-0 top-1/2 -translate-y-1/2 text-white py-4 px-3 flex flex-col gap-4 z-4 border-r border-white/10">
         <ul>
-          <li>GinHub</li>
-          <li>LinkedIn</li>
-          <li>Discord</li>
+          <li className="pb-5">
+            <Link href="">
+              <Image src="/images/icon/social/github.svg" width={30} height={30} alt=""/>
+            </Link>
+          </li>
+          <li className="pb-5">
+            <Link href="">
+              <Image src="/images/icon/social/link.svg" width={30} height={30} alt=""/>
+            </Link></li>
         </ul>
       </div>
       <div className="fixed top-0 right-0 text-white py-4 px-6 flex flex-row gap-4 z-50 border-l border-white/10">

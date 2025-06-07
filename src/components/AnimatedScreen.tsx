@@ -29,7 +29,7 @@ export default function AnimatedSection() {
   return (
     <div
       id="about"
-      className="bg-sky text-white px-2 text-center relative overflow-hidden"
+      className="bg-sky text-white px-2 text-center relative"
     >
       <motion.div
         initial={{ opacity: 0, y: -30 }}
@@ -42,7 +42,7 @@ export default function AnimatedSection() {
 
       <div
         ref={scrollRef}
-        className="sticky top-0 flex items-center justify-center min-h-screen z-6"
+        className="sticky top-0 flex items-center justify-center min-h-[auto] sm:min-h-screen z-6"
       >
         <Image className="absolute top-[200px] right-0" src="/images/icon/moon.svg" width={80} height={80} alt=""/>
         <Image className="absolute" src="/images/icon/earth.svg" width={250} height={250} alt=""/>
