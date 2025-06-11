@@ -44,7 +44,7 @@ export default function AnimatedSection() {
         ref={scrollRef}
         className="sticky top-0 flex items-center justify-center min-h-[auto] sm:min-h-screen z-6"
       >
-        <Image className="absolute top-[200px] right-0" src="/images/icon/moon.svg" width={80} height={80} alt=""/>
+        <Image className="absolute top-[200px] right-0 animate-float" src="/images/icon/moon.svg" width={80} height={80} alt=""/>
         <Image className="absolute" src="/images/icon/earth.svg" width={250} height={250} alt=""/>
         <TagCloud
           options={(w) => ({

@@ -7,7 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { SliderProject } from "@/components/Slider";
-import Image from 'next/image';
+import Image from "next/image";
 import Link from "next/link";
 
 const socialLinks = [
@@ -69,18 +69,29 @@ export default function Home() {
             The Legend Begins
           </h1>
           <p className="text-xl">
-            Long ago, in a digital kingdom far beyond firewalls and code, lived
-            a boy named Roman. He wasn’t a wizard, yet he wielded a power that
-            could shape worlds — the power of code. They called him...{" "}
-            <span className="font-semibold">The Front-end Alchemist</span>.
+            Somewhere in the vast cosmos, among swirling galaxies and drifting
+            stardust, a curious mind named Roman began his journey. Orbiting
+            Planet Earth, with stars as his compass and a keyboard as his ship,
+            he started exploring the universe of code.</p>
+            <p className="text-xl"> He began, like many space
+            explorers, learning to speak the basic languages of the frontend —
+            HTML, CSS, and native JavaScript. From the glowing rings of jQuery
+            to the nebulae of responsive design, Roman charted his course. </p>
+ <p className="text-xl">
+            Eventually, he landed on powerful worlds like React, React Native,
+            and Next.js, where he now crafts smooth, fast, and scalable user
+            interfaces for web and mobile.{" "}
+            <span className="font-semibold">
+              But frontend was just one galaxy.
+            </span>
           </p>
         </motion.div>
         <div className="btn-up animate-float">Up Only</div>
-          <img
-            className="absolute bottom-0 left-0 w-[100%] h-[auto]"
-            src="/images/star-sky.png"
-            alt="User"
-          />
+        <img
+          className="absolute bottom-0 left-0 w-[100%] h-[auto]"
+          src="/images/star-sky.png"
+          alt="User"
+        />
         <div>
           <Image
             className="absolute bottom-0"
@@ -96,7 +107,7 @@ export default function Home() {
         id="about"
         className="bg-sky bg-[#260047] min-h-[150vh] md:min-h-[250vh] text-white flex flex-col items-center justify-center text-center relative"
       >
-        <SliderProject/>
+        <SliderProject />
         <Image
           src="/images/icon/ast-1.webp"
           alt=""
@@ -123,7 +134,7 @@ export default function Home() {
             } as React.CSSProperties
           }
         />
-         <Image
+        <Image
           src="/images/icon/ast-1.webp"
           alt=""
           width={210}
@@ -185,19 +196,23 @@ export default function Home() {
         >
           <h2 className="text-4xl font-bold mb-6">The Chosen One’s Path</h2>
           <p className="text-lg">
-            Roman wasn't always a master. His journey began with a humble
-            laptop, where he battled for hours against the demons of HTML, CSS,
-            and the dark shadows of Bootstrap. But through perseverance and a
-            love for beauty, speed, and logic — he cast his first spell: a
-            website that breathed with life.
+            Drawn to the gravitational pull of deeper logic, Roman entered the
+            realm of Node.js and Express, learning to shape backends, scrape
+            data from the wild web, and build APIs that connect worlds. With
+            tools like Firebase and MongoDB, he launched real-time apps and
+            robust databases into orbit. Along the way, Roman discovered the
+            magic of AI. To him, it's not just a trend — it's the future of
+            development. He works with tools like GitHub Copilot and OpenAI's
+            API to boost creativity, speed up development, and build smarter
+            experiences.
           </p>
         </motion.div>
       </section>
 
       <section
         id="contact"
-  className="bg-contacts bg-[#141414] text-white flex flex-col min-h-[30vh] md:min-h-[40vh] items-center justify-center px-6 text-center relative"      
-  >
+        className="bg-contacts bg-[#141414] text-white flex flex-col min-h-[30vh] md:min-h-[40vh] items-center justify-center px-6 text-center relative"
+      >
         <Image
           height={200}
           width={200}
@@ -276,7 +291,7 @@ export default function Home() {
             } as React.CSSProperties
           }
         />
-         <Image
+        <Image
           src="/images/icon/ast-1.webp"
           alt=""
           width={210}
@@ -340,13 +355,24 @@ export default function Home() {
         <ul>
           <li className="pb-5">
             <Link href="">
-              <Image src="/images/icon/social/github.svg" width={30} height={30} alt=""/>
+              <Image
+                src="/images/icon/social/github.svg"
+                width={30}
+                height={30}
+                alt=""
+              />
             </Link>
           </li>
           <li className="pb-5">
             <Link href="">
-              <Image src="/images/icon/social/link.svg" width={30} height={30} alt=""/>
-            </Link></li>
+              <Image
+                src="/images/icon/social/link.svg"
+                width={30}
+                height={30}
+                alt=""
+              />
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="fixed top-0 right-0 text-white py-4 px-6 flex flex-row gap-4 z-50 border-l border-white/10">
